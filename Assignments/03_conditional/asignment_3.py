@@ -25,7 +25,7 @@ elif score==0.7 :
     grade="Your Grade is C  Good Effort!! "
 elif score==0.6 :
     grade="Your Grade is D  You have potential !! "
-elif score<0.6 :
+elif score<0.6 and score>0 :
     grade="Your Grade F  when there is a will there is a way!! "
 else :
     grade="We appreciate your efforts however your score doesnot satisfy our grading criteria - Kindly try again :) "
