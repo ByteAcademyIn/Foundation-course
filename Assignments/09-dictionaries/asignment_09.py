@@ -14,23 +14,30 @@ Desired output: cwen@iupui.edu 5 """
 #Taking User Input
 filename = raw_input ( " Please enter the File Name ")
 fhandle= open(filename)
+
 email=''
-x=''
+x=[]
 dictionary=dict()
 count=0
 #Adding all the emails and their respective counts in a dictionary
 for line in fhandle :
     line=line.strip()
-    if line.find('From')==0:
-     x = line.split()
 
-    temp=x[1]
-    if temp not in dictionary :
-        dictionary[temp]=1
-        continue
-    else :
-        dictionary[temp]+= 1
-        continue
+    if line.find('From')==0:
+        #print(line)
+        x = line.split(' ')
+        #print(x)
+        temp=x[1]
+        #print(temp)
+
+
+        if temp not in dictionary :
+            dictionary[temp]=1
+
+        else :
+            dictionary[temp]= dictionary[temp]+1
+#print(dictionary)
+
 #finding the maximum value in dictionary
 for email in dictionary :
     if dictionary[email] > count :
