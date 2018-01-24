@@ -11,11 +11,14 @@ or a variable named sum in your solution.
 
 Enter 'mbox-short.txt' as the file name. """
 
+#opening File by taking input from user
 filename = raw_input ( " Enter the file name Please : ")
 fhandle = open(filename,'r')
-
+#assigning the initial values to dummy variables
 count=0
 total=0
+
+#iterating through each line to find the match and using dummy variables to count and add
 for line in fhandle:
     line=str(line)
     if line.startswith('X-DSPAM-Confidence:') :
@@ -24,5 +27,6 @@ for line in fhandle:
         count=count+1
         total=total+temp
         continue
+# output print
 print ( " the total numbers of mentioned type found were " , count )
 print ( " the average of those numbers is " , (total/count) )
