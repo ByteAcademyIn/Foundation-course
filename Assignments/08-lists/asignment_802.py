@@ -8,15 +8,20 @@ entire address of the person who sent the message). Then print out a count at th
 Desired Output:
 stephen.marquard@uct.ac.za louis@media.berkeley.edu zqian@umich.edu.
 There were 27 lines in the file with From as the first word"""
-
+#opening the file
 filename = raw_input ( " Please Enter the File Name " )
 fhandle = open (filename)
+#dummy variable count
 count=0
 email = list()
+#iterating through each line
 for line in fhandle:
+
     line=line.strip()
+#checking if the line starts with 'From' to locate emails ids
     if not line.startswith('From') :
         continue
+#counting and storing all email ids
     count=count+1
     temp=line.split()
     email=temp[1]
