@@ -16,6 +16,10 @@ git clone https://github.com/ByteAcademyIn/Foundation-course.git
 
 
 ### Create a branch with your name
+git checkout -b branch_name
+
+
+### Switch between branches
 git checkout branch_name
 
 
