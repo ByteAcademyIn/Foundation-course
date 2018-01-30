@@ -44,3 +44,19 @@ print ("\n The Total is : " , totl , "\n" )
 print ("\n the Average is : ", totl/num , "\n" )
 print ("\n total count of numbers inputted is : " , num , "\n" )
 print ("\n ThankYou for using our services \n" )
+
+
+"""
+Remarks by KV
+Please use Python3 syntax
+No need for "\n" at the beginning and end of print statments. That's the default nature.
+Read 'print' function description for ways to be able to change it
+This is how your output looks like in Python2
+('\n The Total is : ', 18.0, '\n')
+('\n the Average is : ', 4.5, '\n')
+('\n total count of numbers inputted is : ', 4, '\n')
+
+Couldn't run it in Python3.
+
+Score 14/15
+"""
