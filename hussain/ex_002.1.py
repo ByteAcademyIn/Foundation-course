@@ -2,17 +2,15 @@
 
 hours= input('enter hours: ')
 rate= input('enter rate: ')
+
+
+
 try:
-   float(hours) >= 0
+   hours= float(hours)
+   rate= float(rate)
+   print('nice work')
 except:
     print('error in numeric input')
-try:
-   float(rate) >= 0
-except:
-   print('error in numeric input')
-
-hours= float(hours)
-rate= float(rate)
 
 if hours <= 40:
   print(hours*rate)
