@@ -31,3 +31,20 @@ if WorkingHours <= 40:
     print  (WorkingHours * RateperHour)
 else:
     print ((WorkingHours * RateperHour)+(WorkingHours-40)*RateperHour*1.5)
+
+
+"""
+Remarks:
+Lots of redundant code (lines 9 to 20)
+You could have just put lines 23, 24 in try/except
+Use exit() function
+
+Following is a sample run of your code:
+
+Enter number of working hours : 10
+Enter rate charged per hour : 8.5
+Error Please enter a numeric input
+85.0
+
+Score: 12/15
+"""

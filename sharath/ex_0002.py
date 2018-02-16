@@ -12,3 +12,11 @@ Pay = WorkingHours * RateperHour
 
 #print Pay
 print("Your pay for the day is RS ", Pay)
+
+"""
+Remarks:
+Read the question properly.
+You were suppposed to use float() and not int()
+
+Score: 9/10
+"""
