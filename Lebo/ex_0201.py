@@ -31,3 +31,11 @@ try:
 
 except:
     print ('ERROR, use numericals')
+
+"""
+Remarks:
+Good Job
+Rename the file ex_0200.py
+
+Score: 15/15
+"""

@@ -25,6 +25,14 @@ if 0.0 <= score <= 1.0:
         print ('F')
 
 #Out of range condition
-        
+
 else:
     print ('Error: out of range')
+
+
+"""
+Remarks:
+Good Job
+
+Score: 15/15
+"""

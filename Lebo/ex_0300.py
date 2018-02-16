@@ -29,3 +29,11 @@ def computepay (a,b):
 #output calling the function
 
 print (computepay (hour, rate))
+
+"""
+Remarks:
+Nice.
+Try using the string 'total pay' on line 31 instead of 27.
+Notice the difference in the way it is printed.
+Score: 15/15
+"""
