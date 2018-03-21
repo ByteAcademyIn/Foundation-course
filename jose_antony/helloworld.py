@@ -1,2 +1,2 @@
-import sys
-print(sys.version_info)
+name = ("Jose")
+print("Hello! I'm", name)
