@@ -1,43 +1,44 @@
 """
-Code to prompt the user for hours and rate per hour 
-using input to compute gross pay. 
+Code to prompt for a score between 0.0 and 1.0. 
+If the score is out of range, print an error. 
+If the score is between 0.0 and 1.0, 
+print a grade using the following table:
+Score Grade
+0.9 =< A s>=9
+0.8 =< B
+0.7 =< C
+0.6 =< D
+< 0.6 F
+If the user enters a value out of range, 
+print a suitable error message and exit.
 
-	* Give the employee 1.5 times the hourly rate for hours 
-	  worked above 40hrs. 
-
-	* Include try and except to handle non-numeric inputs.
-
-Should use input to read a string and float() to convert 
-the string to a number.
 """
+# prompts the user to enter a score between 0.0 and 1.0
+score=input("Please enter a score between 0.0 and 1.0 : ")
 
-#prompts the user to enter no. of hours
-hours=input("Please enter the no. of hours : ")
-
-# Handling non-numeric hour value
+# Checking if non-numeric value
 try : 
-	hour_check = float(hours) 
+	score_check = float(score) 
 
-	#prompts the user to enter rate per hour
-	rate=input("Please enter your rate per hour : ")
+	# Checking if values between 0.0 and 1.0
+	 
+	if (score_check > 1.0) :
+		print("Error! Please enter a score between 0.0 and 1.0.")
 
-	# Handling non-numeric rate value
-	try : 
-		rate_check = float(rate) 
+	# Score grading
+	elif score_check >= 0.9 : 
+		grade = "A"
+	elif score_check >= 0.8 : 
+		grade = "B"
+	elif score_check >= 0.7 : 
+		grade = "C"
+	elif score_check >= 0.6 : 
+		grade = "D"
+	elif score_check < 0.6 : 
+		grade = "F"
 
-		# Computing the gross pay for hours less than or equal to 40hrs
-		if hour_check<=40 : 
-			pay=hour_check*rate_check
+	print("Grade :",grade)
 
-		# Computing the gross pay for hours more than 40hrs
-		else :
-			pay=(40*rate_check)+((hour_check-40)*rate_check*1.5)
-
-		#Prints the gross pay
-		print("Gross pay : ",pay)
-
-	except:
-		print("Error! Please enter a numeric value.")
-
+		
 except :
-	print("Error! Please enter a numeric value.")
+	print("Error! Please enter a score between 0.0 and 1.0.")
