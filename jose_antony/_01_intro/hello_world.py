@@ -1,2 +1,7 @@
+#Code hello world 
+
+# assigns value to variable "name"
 name = ("Jose")
-print("Hello! My name is", name)
+
+# retrieves value stored in the variable and prints 
+print("Hello World! My name is", name)

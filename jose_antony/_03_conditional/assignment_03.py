@@ -14,14 +14,14 @@ the string to a number.
 #prompts the user to enter no. of hours
 hours=input("Please enter the no. of hours : ")
 
-# Handling non-numeric hour
+# Handling non-numeric hour value
 try : 
 	hour_check = float(hours) 
 
 	#prompts the user to enter rate per hour
 	rate=input("Please enter your rate per hour : ")
 
-	# Handling non-numeric rate
+	# Handling non-numeric rate value
 	try : 
 		rate_check = float(rate) 
 
