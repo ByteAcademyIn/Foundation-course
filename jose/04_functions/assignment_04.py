@@ -10,7 +10,7 @@ checking the user input unless you want to - you can assume the user types
 numbers properly. Do not name your variable sum or use the sum() function.
 
 """
-# defining function to compute the gross pay for hours more than 40hrs
+# Defining function to compute the gross pay for hours more than 40hrs
 def computepay(h,r):
 	payment=(40*r)+((h-40)*r*1.5)
 	return payment
@@ -22,7 +22,7 @@ hours=input("Please enter the no. of hours : ")
 try:
 	hour_check = float(hours)
 
-	#prompts the user to enter rate per hour
+	# Prompts the user to enter rate per hour
 	rate=input("Please enter your rate per hour : ")
 
 	# Handling non-numeric rate value
@@ -33,11 +33,11 @@ try:
 		if hour_check<=40:
 			pay=hour_check*rate_check
 
-		# calling function to compute the gross pay for hours more than 40hrs
+		# Calling function to compute the gross pay for hours more than 40hrs
 		else:
 			pay=computepay(hour_check,rate_check)
 
-		#Prints the gross pay
+		# Prints the gross pay
 		print("Gross pay : ",pay)
 
 	except:
