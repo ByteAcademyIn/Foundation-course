@@ -22,26 +22,29 @@ hours=input("Please enter the no. of hours : ")
 try:
 	hour_check = float(hours)
 
+except:
+	print("Error! Please enter a numeric value.")
+
 	# Prompts the user to enter rate per hour
-	rate = input("Please enter your rate per hour : ")
+rate = input("Please enter your rate per hour : ")
 
-	# Handling non-numeric rate value
-	try:
-		rate_check = float(rate)
-
-		# Computing the gross pay for hours less than or equal to 40hrs
-		if hour_check <= 40:
-			pay = hour_check*rate_check
-
-		# Calling function to compute the gross pay for hours more than 40hrs
-		else:
-			pay = computepay(hour_check,rate_check)
-
-		# Prints the gross pay
-		print("Gross pay : ",pay)
-
-	except:
-		print("Error! Please enter a numeric value.")
+# Handling non-numeric rate value
+try:
+	rate_check = float(rate)
 
 except:
 	print("Error! Please enter a numeric value.")
+
+# Computing the gross pay for hours less than or equal to 40hrs
+if hour_check <= 40:
+	pay = hour_check*rate_check
+
+# Calling function to compute the gross pay for hours more than 40hrs
+else:
+	pay = computepay(hour_check,rate_check)
+
+# Prints the gross pay
+print("Gross pay : ",pay)
+
+	
+
