@@ -32,10 +32,8 @@ while i != 'done':
     except:
 
         #check if data is invalid or if user is trying to exit the loop
-        if i == 'done':
-            #exit the loop if user enters 'done'
-            break
-        else:
+        if i != 'done':
+
             #start the loop again for invalid data
             print('Invalid input')
             continue

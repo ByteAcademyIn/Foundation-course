@@ -23,10 +23,8 @@ while i != 'done':
         x = int(i)
     except:
         #check if user has entered 'done'
-        if i == 'done':
-            #exit loop if user has entered 'done'
-            break
-        else:
+        if i != 'done':
+            
             #print error message and run loop again for invalid data
             print('Error: Invalid input')
             continue
