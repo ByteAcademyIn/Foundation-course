@@ -15,4 +15,4 @@ while True:
             small = say_num # storing the smallest number
     except ValueError: # exception error captured for wrong value type
         print("only numbers here, else type 'done' to exit")
-print(big, small)
+print(big, small) # print results
