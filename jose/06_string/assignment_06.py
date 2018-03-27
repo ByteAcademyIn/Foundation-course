@@ -6,13 +6,13 @@ floating point number and print it out.
 text = "X-DSPAM-Confidence: 0.8475"
 """
 
-#prompt to enter the data
+#prompts to enter the data
 data=input("Please enter the data: ")
 
 #finds the position to extract 
 f_pos=data.find(":")
 
-#exractind the number from the data
+#extracting the number from the data
 num=data[f_pos+1:]
 
 #prints the number
