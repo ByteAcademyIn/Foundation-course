@@ -14,16 +14,15 @@ smallest=None
 while True:
 
 	#Prompts the user to enter a number or type done:
-	n=(input('Please enter a number or type "done": '))
+	inp=(input('Please enter a number or type "done": '))
 
 	#detects "done" breaks the loop
-	if n=="done":
+	if inp=="done":
 		break
 	try:
 
 		#Filters non-numeric values
-		large=float(n)
-		small=float(n)
+		num=float(inp)
 	except:
 
 		#Prints the error and continues back to loop
@@ -32,13 +31,13 @@ while True:
 
 	#computes largest and smallest numbers
 	if largest is None:
-		largest=large
-	elif large>largest:
-		largest=large
+		largest=num
+	elif num>largest:
+		largest=num
 	if smallest is None:
-		smallest=small
-	elif small<smallest:
-		smallest=small
+		smallest=num
+	elif num<smallest:
+		smallest=num
 
 #prints the result
 print("Largest number:",largest," Smallest number:",smallest)

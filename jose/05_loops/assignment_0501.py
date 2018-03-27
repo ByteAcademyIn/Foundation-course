@@ -33,7 +33,6 @@ while True:
 	#computes total, count and average
 	tot=tot+num
 	cnt=cnt+1
-	avg=tot/cnt
 
 #prints the result
-print("Total:",tot," Count:",cnt," Average:",avg)
+print("Total:",tot," Count:",cnt," Average:",tot/cnt)
