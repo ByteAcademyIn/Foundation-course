@@ -10,10 +10,10 @@ text = "X-DSPAM-Confidence: 0.8475"
 text = input('enter text: ')
 
 #Finding the number
-x = text.find('0')
+x = text.find(':')
 
 #extracting the number
-num = text[x:]
+num = text[x+1:]
 
 #Printing the floating point number
 print(float(num))
