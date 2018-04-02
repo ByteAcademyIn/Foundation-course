@@ -48,6 +48,6 @@ for line in file:
 
 #printing the emails
 for i in range(len(emails)):
-    print(emails[i], end = ' ')
+    print(emails[i])
 
 print('There were', (len(emails)), 'lines in the file with From as the first word')
