@@ -82,10 +82,10 @@ word = input('Enter a word: ')
 shift = int(input('Enter a shift value: '))
 
 #Test cases for Caesar Cypher:
-#assert rotate_word('AbCd', -3) == 'XyZa', "Incorrect encryption"
-#assert rotate_word('ZyXw', -100) == 'DcBa', "Incorrect encryption"
-#assert rotate_word('ZyXw', 100) == 'VuTs', "Incorrect encryption"
-#assert rotate_word('ZyXw', 22) == 'VuTs', "Incorrect encryption"
-#assert rotate_word('I am 100% awesome', -3) == 'F xj 100% xtbpljb', "Incorrect encryption"
+assert rotate_word('AbCd', -3) == 'XyZa', "Incorrect encryption"
+assert rotate_word('ZyXw', -100) == 'DcBa', "Incorrect encryption"
+assert rotate_word('ZyXw', 100) == 'VuTs', "Incorrect encryption"
+assert rotate_word('ZyXw', 22) == 'VuTs', "Incorrect encryption"
+assert rotate_word('I am 100% awesome', -3) == 'F xj 100% xtbpljb', "Incorrect encryption"
 #printing encrypted word
 print(rotate_word(word, shift))
