@@ -35,7 +35,7 @@ hours = {}
 #iterating over the lines in the file
 for line in file:
 
-    #finging the 'From lines'
+    #finding the 'From ' lines
     if 'From ' in line:
 
         #splitting the line into words
