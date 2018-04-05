@@ -23,7 +23,6 @@ something else?).
 
 #importing libraries
 import urllib.request, urllib.parse, urllib.error
-import re
 from bs4 import BeautifulSoup
 
 #input prompts
@@ -33,7 +32,7 @@ url = input('Enter URL: ')
 html_source = urllib.request.urlopen(url)
 
 #using BeautifulSoup to parse the html_source
-soup = BeautifulSoup(html_source, 'html5lib')
+soup = BeautifulSoup(html_source, 'html5lib') #I had to download this html parser since 'html parser' wasn't working
 
 #initializing the list of numbers
 num = []
