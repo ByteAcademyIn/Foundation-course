@@ -17,5 +17,6 @@ except:
 
 #prints in upper case
 for line in f_hand:
-	line=line.upper()
-	print(line)
+	fin=line.strip().upper()
+	print(fin)
+	#print("asdfaskdjfhqlwSABFKSJHFKJHBF")

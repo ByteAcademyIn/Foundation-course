@@ -39,3 +39,4 @@ for line in f_hand:
 
 #prints the average
 print("Average SPAM confidence:",tot/count)
+
